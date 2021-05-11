@@ -1,10 +1,49 @@
 .flex-container{
     display: flex;
+    align-items: center;
 }
 
-footer, nav {
-    justify-content: space-between;
-}
 .justify-right {
     justify-self: right;
+}
+
+#languages {
+    
+}
+
+body {
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    padding: 6px;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    justify-content: space-evenly;
+    background: #f2f2f2;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    color: #222;
+}
+
+.footer-link {
+    padding: 15px;
+    color: #70757a;
 }
