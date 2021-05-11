@@ -1,0 +1,10 @@
+.flex-container{
+    display: flex;
+}
+
+footer, nav {
+    justify-content: space-between;
+}
+.justify-right {
+    justify-self: right;
+}
