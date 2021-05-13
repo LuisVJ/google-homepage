@@ -1,43 +1,121 @@
 .flex-container{
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .justify-right {
     justify-self: right;
 }
 
+.all-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    flex-shrink: 1;
+}
+
+.space-top {
+    margin-top: 15px;
+}
+
 #profilepic {
     border-radius: 50%;
 }
 
+#google-image {
+    text-align: center;
+    flex-shrink: 1;
+    margin-top: 192px;
+    height: calc(100% - 560px);
+    max-height: 290px;
+}
+
 #languages {
-    
+    justify-content: center;
+    padding: 0 5px;
+    font-size: small;
+}
+
+.language-element {
+    display: block;
+    padding: 0 5px;
 }
 
 body {
     font-size: 14px;
     font-family: arial, sans-serif;
     min-width: 400px;
-    display: flex;
-    flex-direction: column;
+    margin: 0 10px;
+}
+
+main {
+    width: 100%;
 }
 
 nav {
     justify-content: space-between;
     align-items: center;
     height: 48px;
-    padding: 6px;
+    padding: 8px;
+}
+
+p {
+    margin-right: 10px;
+}
+
+#nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 a {
     text-decoration: none;
 }
 
+form {
+    text-align: center;
+    padding: 20px;
+}
+
+#search-bar {
+    background: #fff;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 44px;
+    width: auto;
+    max-width: 584px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+}
+
 footer {
-    justify-content: space-evenly;
+    justify-content: space-between;
     background: #f2f2f2;
     flex-wrap: wrap;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
 }
 
 .nav-link {
@@ -45,6 +123,11 @@ footer {
     padding: 5px;
     margin: 0 5px;
     color: #222;
+    font-size: 13px;
+}
+
+.nav-image {
+    padding: 5px;
 }
 
 .footer-link {

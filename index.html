@@ -1,54 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="styles/reset.css" rel="stylesheet" type="text/css">
-  <link href="styles/style.css" rel="stylesheet" type="text/css">
-  <title>Document</title>
-</head>
-<body>
-  <nav class="flex-container">
-    <div>
-      <a class="nav-link" href="#">Sobre Google</a>
-      <a class="nav-link" href="#">Tienda</a>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/reset.css" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <title>Google project</title>
+  </head>
+  <body>
+    <div class="all-content flex-container">
+      <nav class="flex-container">
+        <div id="nav-left">
+          <a class="nav-link" href="#">Sobre Google</a>
+          <a class="nav-link" href="#">Tienda</a>
+        </div>
+        <div id="nav-right">
+          <a class="nav-link" href="#">Gmail</a>
+          <a class="nav-link" href="#">Imágenes</a>
+          <a class="nav-image" href="#"><img id="menu" src="./images/Menu.svg"></a>
+          <a class="nav-image" href="#"><img id="profilepic" src="./images/profilepic.png"></a>
+        </div>
+      </nav>
+      <main>
+        <div id="google-image">
+          <img src="./images/googlelogo.png">
+        </div>
+        <form>
+          <div id="search-bar">
+            <input type="search">
+          </div>
+          <div class="space-top">
+            <button type="submit">Buscar con Google</button>
+            <button type="submit">Voy a tener Suerte</button>
+          </div>
+        </form>
+        <div>
+          <div id="languages" class="flex-container">
+            <p>Ofrecido por Google en: </p>
+            <a class="language-element" href="#">English</a>
+            <a class="language-element" href="#">català</a>
+            <a class="language-element" href="#">galego</a>
+            <a class="language-element" href="#">euskara</a>
+          </div>
+        </div>
+      </main>
+      <footer class="flex-container">
+        <div>
+          <a class="footer-link" href="#">Publicidad</a>
+          <a class="footer-link" href="#">Empresa</a>
+          <a class="footer-link" href="#">Cómo funciona la Búsqueda</a>
+        </div>
+        <div>
+          <a class="footer-link" href="#">Privacidad</a>
+          <a class="footer-link" href="#">Términos</a>
+          <a class="footer-link" href="#">Configuración</a>
+        </div>
+      </footer>
     </div>
-    <div >
-      <a class="nav-link" href="#">Gmail</a>
-      <a class="nav-link" href="#">Imágenes</a>
-      <a href="#">Menu</a>
-      <a href="#"><img id="profilepic" src="./images/profilepic.png"></a>
-    </div>
-  </nav>
-  <main>
-    <img src="./images/googlelogo.png">
-    <input type="search">
-    <div>
-      <button type="submit">Buscar con Google</button>
-      <button type="submit">Voy a tener Suerte</button>
-    </div>
-    <div id="languages">
-      <div class="flex-container">
-        <p>Ofrecido por Google en: </p>
-        <a href="#">English</a>
-        <a href="#">català</a>
-        <a href="#">galego</a>
-        <a href="#">euskara</a>
-      </div>
-    </div>
-  </main>
-  <footer class="flex-container">
-    <div>
-      <a class="footer-link" href="#">Publicidad</a>
-      <a class="footer-link" href="#">Empresa</a>
-      <a class="footer-link" href="#">Cómo funciona la Búsqueda</a>
-    </div>
-    <div>
-      <a class="footer-link" href="#">Privacidad</a>
-      <a class="footer-link" href="#">Términos</a>
-      <a class="footer-link" href="#">Configuración</a>
-    </div>
-  </footer>
-</body>
+  </body>
 </html>
